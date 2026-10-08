@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Vikas S - Software Engineer: Responsive pixel-art portfolio with projects, technical skills, and experience">
+  <title>Vikas // Software Engineer</title>
+  
+  <!-- Apple iPhone SF Pro / Inter Typography Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- VERTICAL NAVBAR & RESPONSIVE HEADER                      -->
+  <!-- ========================================================= -->
+  <header id="site-header" class="vertical-navbar">
+    
+    <!-- Top Bar Component (Sticky Topbar on Mobile/Tablet, Top of Sidebar on Desktop) -->
+    <div class="navbar-header-bar">
+      <div class="logo">
+        <a href="#hero">VIKAS.DEV</a>
+      </div>
+
+      <div class="navbar-actions">
+        <!-- Night Mode / Dark Mode Toggle Button -->
+        <button id="theme-toggle" class="pixel-toggle-btn" type="button" aria-label="Toggle Night Mode">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-text">NIGHT</span>
+        </button>
+
+        <!-- Mobile/Tablet Hamburger Menu Toggle -->
+        <button id="menu-toggle" class="menu-toggle-btn" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-icon">☰</span>
+          <span class="menu-text">MENU</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Navigation Drawer (Vertical Sidebar on Desktop, Slide Drawer on Mobile/Tablet) -->
+    <nav id="main-nav" class="nav-drawer" aria-label="Main Navigation">
+      <div class="drawer-header">
+        <div class="drawer-title">
+          <span class="status-indicator" title="System Online"></span>
+          <span>QUEST_NAV // MENU</span>
+        </div>
+        <button id="menu-close-btn" class="menu-close-btn" type="button" aria-label="Close Navigation Menu">
+          ✕
+        </button>
+      </div>
+
+      <div class="nav-links-wrapper">
+        <div class="nav-section-title">▶ MENU SELECTION</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#hero" class="nav-link active">
+              <span class="nav-bullet">▶</span>
+              <span class="nav-icon">👾</span>
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">
+              <span class="nav-bullet">▶</span>
+              <span class="nav-icon">👤</span>
+              <span class="nav-label">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link">
+              <span class="nav-bullet">▶</span>
+              <span class="nav-icon">⚡</span>
+              <span class="nav-label">Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#timeline" class="nav-link">
+              <span class="nav-bullet">▶</span>
+              <span class="nav-icon">📜</span>
+              <span class="nav-label">Timeline</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">
+              <span class="nav-bullet">▶</span>
+              <span class="nav-icon">⚔️</span>
+              <span class="nav-label">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <span class="nav-bullet">▶</span>
+              <span class="nav-icon">✉️</span>
+              <span class="nav-label">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Player Status in Vertical Sidebar -->
+      <div class="sidebar-status-box">
+        <div class="sidebar-user-preview">
+          <img src="profile.jpeg" alt="Vikas S Thumbnail" class="sidebar-avatar-img">
+          <div class="sidebar-user-info">
+            <span class="sidebar-user-name">VIKAS S</span>
+            <span class="status-badge">LVL 99 DEV</span>
+          </div>
+        </div>
+        <div class="status-meta">
+          <span class="status-pulse-dot"></span>
+          <span class="status-text">SYSTEM: ONLINE</span>
+        </div>
+        <div class="sidebar-cv-wrap">
+          <a href="Vikas.pdf" download="Vikas_Resume.pdf" class="pixel-link-cv">
+            📄 RESUME.PDF
+          </a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                   -->
+  <!-- ========================================================= -->
+  <div class="site-main-wrapper">
+    <main>
+
+      <!-- ======================================================= -->
+      <!-- HERO SECTION (PIXEL ART RPG DIALOGUE BOX)               -->
+      <!-- ======================================================= -->
+      <section id="hero" aria-labelledby="hero-title">
+        
+        <div class="hero-content">
+          
+          <!-- Retro Window Header Bar -->
+          <div class="dialog-header">
+            <div class="dialog-header-title">
+              <span class="status-indicator" title="Status: Online"></span>
+              <span>QUEST_TERMINAL // PLAYER_01</span>
+            </div>
+            <div class="dialog-controls">
+              <span class="dialog-control-btn" title="Minimize">_</span>
+              <span class="dialog-control-btn" title="Close">x</span>
+            </div>
+          </div>
+
+          <!-- Dialogue Box Inner Body -->
+          <div class="dialog-body">
+            
+            <!-- Pixel Avatar Frame -->
+            <div class="avatar-frame">
+              <img 
+                src="profile.jpeg" 
+                alt="Portrait of Vikas S" 
+                class="avatar-img"
+                loading="eager"
+              >
+              <div class="avatar-badge">LVL 99 DEV</div>
+            </div>
+
+            <!-- Hero Text Details & Welcome Content -->
+            <div class="hero-details">
+              <div class="hero-welcome-badge">
+                <span>▶</span> SYSTEM STATUS: READY FOR QUESTS
+              </div>
+
+              <!-- Welcome Title -->
+              <h1 id="hero-title" class="hero-title">
+                HELLO WORLD! <br>
+                I'M VIKAS S.
+              </h1>
+
+              <!-- Brief Tagline -->
+              <p class="hero-tagline">
+                Software Engineer building high-performance web systems, hardware sensor integrations, and pixel-crafted user experiences<span class="blinking-cursor"></span>
+              </p>
+
+              <!-- Technical Specialization Tags -->
+              <div class="hero-tags">
+                <span class="pixel-tag">#PYTHON</span>
+                <span class="pixel-tag">#JAVA</span>
+                <span class="pixel-tag">#HTML5_CSS3</span>
+                <span class="pixel-tag">#IOT_SENSORS</span>
+                <span class="pixel-tag">#HACKATHON_WINNER</span>
+              </div>
+
+              <!-- Call-To-Action Pixel Buttons -->
+              <div class="hero-actions">
+                <a href="#projects" class="pixel-btn pixel-btn-primary">
+                  ⚔️ View Projects
+                </a>
+                <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                  ✉️ Contact Me
+                </a>
+                <a href="Vikas.pdf" download="Vikas_Resume.pdf" class="pixel-btn pixel-btn-outline">
+                  📄 Get CV
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- ABOUT ME SECTION (RESPONSIVE GRID)                      -->
+      <!-- ======================================================= -->
+      <section id="about" aria-labelledby="about-title">
+        <div class="section-header-box">
+          <h2 id="about-title">About Me</h2>
+          <span class="section-tag">QUEST // BIO_LOG</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story / Bio Card -->
+          <div class="pixel-window about-bio-card">
+            <div class="pixel-window-header">
+              <span>BIO_DATA.LOG</span>
+              <div class="pixel-window-dots"><span></span><span></span></div>
+            </div>
+            <div class="pixel-window-body">
+              <h3 class="about-greeting">Greetings! 👋</h3>
+              <p class="about-text">
+                I'm <strong>Vikas S</strong>, a software engineering student at <strong>AIT Chikmagaluru</strong> (2025–2029) and an aspiring engineer driven by solving real-world challenges through clean, well-tested code.
+              </p>
+              <p class="about-text">
+                From developing automated IoT environmental systems like our <em>Rain Sensor Project</em> to securing <strong>2nd place in the Hackathon</strong>, I love turning logic into impactful software solutions.
+              </p>
+              <div class="about-pillars">
+                <div class="pillar-item">
+                  <span class="pillar-icon">⚡</span>
+                  <span class="pillar-label">Resilient Logic</span>
+                </div>
+                <div class="pillar-item">
+                  <span class="pillar-icon">🛠️</span>
+                  <span class="pillar-label">Hardware & IoT</span>
+                </div>
+                <div class="pillar-item">
+                  <span class="pillar-icon">🎯</span>
+                  <span class="pillar-label">Rapid Problem Solving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RPG Stats Sheet Card -->
+          <div class="pixel-window about-stats-card">
+            <div class="pixel-window-header">
+              <span>PLAYER_SHEET // STATS</span>
+              <span class="status-indicator"></span>
+            </div>
+            <div class="pixel-window-body">
+              <ul class="stats-list">
+                <li class="stat-row">
+                  <span class="stat-name">CLASS:</span>
+                  <span class="stat-val">Software Engineer (Fresher)</span>
+                </li>
+                <li class="stat-row">
+                  <span class="stat-name">LOCATION:</span>
+                  <span class="stat-val">Chikmagaluru, Karnataka 📍</span>
+                </li>
+                <li class="stat-row">
+                  <span class="stat-name">EDUCATION:</span>
+                  <span class="stat-val">B.E. at AIT (2025 – 2029)</span>
+                </li>
+                <li class="stat-row">
+                  <span class="stat-name">CGPA:</span>
+                  <span class="stat-val highlight-val">6.7 / 10.0</span>
+                </li>
+                <li class="stat-row">
+                  <span class="stat-name">HONORS:</span>
+                  <span class="stat-val highlight-val">2nd Place @ Hackathon 🏆</span>
+                </li>
+                <li class="stat-row">
+                  <span class="stat-name">AVAILABILITY:</span>
+                  <span class="stat-val badge-ready">OPEN TO WORK</span>
+                </li>
+              </ul>
+
+              <div class="rpg-bar-group">
+                <div class="rpg-bar-label">
+                  <span>HP [Problem Solving]</span>
+                  <span>99/99</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 100%;"></div></div>
+
+                <div class="rpg-bar-label">
+                  <span>MP [Continuous Learning]</span>
+                  <span>100/100</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- SKILLS SECTION (RESPONSIVE GRID)                        -->
+      <!-- ======================================================= -->
+      <section id="skills" aria-labelledby="skills-title">
+        <div class="section-header-box">
+          <h2 id="skills-title">Technical Skills</h2>
+          <span class="section-tag">INVENTORY // ABILITIES</span>
+        </div>
+        <p class="section-subtext">Equipped with core programming languages, modern web engineering, and hardware integrations.</p>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Programming -->
+          <div class="pixel-window skill-card">
+            <div class="pixel-window-header">
+              <span>⚔️ PROGRAMMING</span>
+            </div>
+            <div class="pixel-window-body">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">OOP & Algorithms</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Frontend Web -->
+          <div class="pixel-window skill-card">
+            <div class="pixel-window-header">
+              <span>🎨 FRONTEND</span>
+            </div>
+            <div class="pixel-window-body">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 (Semantic)</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 & Responsive</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Backend & Architecture -->
+          <div class="pixel-window skill-card">
+            <div class="pixel-window-header">
+              <span>⚙️ BACKEND & SYSTEMS</span>
+            </div>
+            <div class="pixel-window-body">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java Backend Logic</span>
+                  <span class="skill-pct">78%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 78%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">REST Architecture</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 75%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">System Optimization</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Hardware & Tools -->
+          <div class="pixel-window skill-card">
+            <div class="pixel-window-header">
+              <span>🛠️ TOOLS & SENSORS</span>
+            </div>
+            <div class="pixel-window-body">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Rain Sensor Integration</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Automated Monitoring</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & Version Control</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="pixel-meter"><div class="pixel-meter-fill" style="width: 82%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- TIMELINE / EXPERIENCE SECTION                           -->
+      <!-- ======================================================= -->
+      <section id="timeline" aria-labelledby="timeline-title">
+        <div class="section-header-box">
+          <h2 id="timeline-title">Experience & Timeline</h2>
+          <span class="section-tag">QUEST_LOG // HISTORY</span>
+        </div>
+        <p class="section-subtext">Chronological track record of education, achievements, and technical projects.</p>
+
+        <div class="timeline-container">
+          <!-- Milestone 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">★</div>
+            <div class="pixel-window timeline-card">
+              <div class="pixel-window-header">
+                <span>2025 – 2029 // ACADEMIC</span>
+                <span class="timeline-badge">CURRENT</span>
+              </div>
+              <div class="pixel-window-body">
+                <h3 class="timeline-title">Bachelor of Engineering (B.E.)</h3>
+                <div class="timeline-meta">AIT, Chikmagaluru | CGPA: <strong>6.7</strong></div>
+                <p class="timeline-desc">
+                  Pursuing undergraduate engineering curriculum with an emphasis on algorithms, data structures, software development, and modern computing architectures.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">🏆</div>
+            <div class="pixel-window timeline-card highlight-card">
+              <div class="pixel-window-header">
+                <span>HACKATHON // RUNNER UP</span>
+                <span class="timeline-badge win-badge">2ND PLACE 🏆</span>
+              </div>
+              <div class="pixel-window-body">
+                <h3 class="timeline-title">Secured 2nd Place in Hackathon</h3>
+                <div class="timeline-meta">Rapid Prototyping & Algorithmic Problem Solving</div>
+                <p class="timeline-desc">
+                  Recognized on the podium for rapidly architecting and presenting a robust software solution under demanding sprint deadlines.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">🌧️</div>
+            <div class="pixel-window timeline-card">
+              <div class="pixel-window-header">
+                <span>2025 – 2029 // PROJECT MILESTONE</span>
+                <span class="timeline-badge">HARDWARE & WEB</span>
+              </div>
+              <div class="pixel-window-body">
+                <h3 class="timeline-title">Rain Sensor Automated Monitoring System</h3>
+                <div class="timeline-meta">Technologies: Python, HTML, Java</div>
+                <p class="timeline-desc">
+                  Engineered hardware sensor interface paired with a software pipeline to detect precipitation in real time and automate monitoring alerts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">🚀</div>
+            <div class="pixel-window timeline-card">
+              <div class="pixel-window-header">
+                <span>PRESENT // CAREER QUEST</span>
+                <span class="timeline-badge open-badge">FRESHER</span>
+              </div>
+              <div class="pixel-window-body">
+                <h3 class="timeline-title">Software Engineer (Fresher)</h3>
+                <div class="timeline-meta">Ready for Full-time Roles & Engineering Internships</div>
+                <p class="timeline-desc">
+                  Actively seeking junior developer and engineering roles to contribute clean, well-tested code and collaborate on impactful real-world systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- PROJECTS SECTION (RESPONSIVE GRID)                      -->
+      <!-- ======================================================= -->
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="section-header-box">
+          <h2 id="projects-title">Featured Projects</h2>
+          <span class="section-tag">PORTFOLIO // LAB</span>
+        </div>
+        <p class="section-subtext">Featured engineering builds across IoT systems, responsive web design, and algorithmic problem solving.</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="pixel-window project-card">
+            <div class="pixel-window-header">
+              <span>🌧️ PROJECT_01</span>
+              <span class="project-tag-badge">IOT // SYSTEM</span>
+            </div>
+            <div class="pixel-window-body">
+              <h3 class="project-title">Rain Sensor Automated System</h3>
+              <p class="project-desc">
+                An end-to-end automated rain sensor project designed for real-time precipitation detection, data ingestion, and responsive web alerts.
+              </p>
+              <div class="project-tags">
+                <span class="pixel-tag">#Python</span>
+                <span class="pixel-tag">#Java</span>
+                <span class="pixel-tag">#HTML</span>
+                <span class="pixel-tag">#Sensors</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="pixel-btn pixel-btn-primary">⚔️ Inquire</a>
+                <a href="#timeline" class="pixel-btn pixel-btn-secondary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="pixel-window project-card">
+            <div class="pixel-window-header">
+              <span>👾 PROJECT_02</span>
+              <span class="project-tag-badge">RESPONSIVE WEB</span>
+            </div>
+            <div class="pixel-window-body">
+              <h3 class="project-title">Retro Pixel Art Portfolio</h3>
+              <p class="project-desc">
+                Personal responsive developer portfolio engineered with vertical navbar, CSS Grid layouts, dark/light themes, and seamless cross-device media queries.
+              </p>
+              <div class="project-tags">
+                <span class="pixel-tag">#HTML5</span>
+                <span class="pixel-tag">#CSS_Grid</span>
+                <span class="pixel-tag">#Flexbox</span>
+                <span class="pixel-tag">#Vanilla_JS</span>
+              </div>
+              <div class="project-actions">
+                <a href="#hero" class="pixel-btn pixel-btn-primary">⚔️ Live Demo</a>
+                <a href="#about" class="pixel-btn pixel-btn-secondary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="pixel-window project-card">
+            <div class="pixel-window-header">
+              <span>🏆 PROJECT_03</span>
+              <span class="project-tag-badge">AWARD WINNER</span>
+            </div>
+            <div class="pixel-window-body">
+              <h3 class="project-title">Hackathon Sprint Engine</h3>
+              <p class="project-desc">
+                Competitive algorithmic system securing 2nd place at Hackathon. Focused on fast data workflows and clean computational architecture.
+              </p>
+              <div class="project-tags">
+                <span class="pixel-tag">#Python</span>
+                <span class="pixel-tag">#Algorithms</span>
+                <span class="pixel-tag">#DataStructures</span>
+              </div>
+              <div class="project-actions">
+                <a href="#timeline" class="pixel-btn pixel-btn-primary">⚔️ Overview</a>
+                <a href="#contact" class="pixel-btn pixel-btn-secondary">Discuss</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- CONTACT SECTION (RESPONSIVE GRID)                       -->
+      <!-- ======================================================= -->
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="section-header-box">
+          <h2 id="contact-title">Get In Touch</h2>
+          <span class="section-tag">COMM_LINK // SIGNAL</span>
+        </div>
+        <p class="section-subtext">Interested in collaborating, hiring for junior/intern roles, or discussing systems? Reach out!</p>
+
+        <div class="contact-grid">
+          <!-- Direct Coordinates Card -->
+          <div class="pixel-window contact-card">
+            <div class="pixel-window-header">
+              <span>TRANSMISSION_COORDINATES</span>
+              <span class="status-indicator"></span>
+            </div>
+            <div class="pixel-window-body">
+              <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div class="contact-text-group">
+                  <div class="contact-label">EMAIL ADDRESS:</div>
+                  <a href="mailto:vikaskumar76262@gmail.com" class="contact-value">vikaskumar76262@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <div class="contact-text-group">
+                  <div class="contact-label">CONTACT NUMBER:</div>
+                  <a href="tel:+918197354733" class="contact-value">+91 8197354733</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div class="contact-text-group">
+                  <div class="contact-label">LOCATION:</div>
+                  <span class="contact-value">Chikmagaluru, Karnataka, India</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📄</span>
+                <div class="contact-text-group">
+                  <div class="contact-label">OFFICIAL CV:</div>
+                  <a href="Vikas.pdf" download="Vikas_Resume.pdf" class="pixel-link">Download Vikas.pdf [PDF]</a>
+                </div>
+              </div>
+
+              <div class="contact-availability-box">
+                <span class="availability-dot"></span>
+                <span>STATUS: AVAILABLE FOR IMMEDIATE JOINING</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="pixel-window contact-form-card">
+            <div class="pixel-window-header">
+              <span>DISPATCH_MESSAGE</span>
+              <span class="dialog-control-btn">x</span>
+            </div>
+            <div class="pixel-window-body">
+              <form id="contact-form" class="pixel-form" action="#" method="POST">
+                <div class="form-group">
+                  <label for="contact-name">YOUR_NAME:</label>
+                  <input type="text" id="contact-name" name="name" class="pixel-input" placeholder="e.g. Alex Hunter" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">YOUR_EMAIL:</label>
+                  <input type="email" id="contact-email" name="email" class="pixel-input" placeholder="e.g. alex@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-msg">MESSAGE_TEXT:</label>
+                  <textarea id="contact-msg" name="message" class="pixel-input" rows="4" placeholder="Share your message or opportunity..." required></textarea>
+                </div>
+
+                <button type="submit" class="pixel-btn pixel-btn-primary form-submit-btn">
+                  ✉️ Transmit Message
+                </button>
+
+                <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ======================================================= -->
+    <!-- FOOTER                                                  -->
+    <!-- ======================================================= -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2026 Vikas S // Software Engineer. Built with responsive pixel art aesthetics.</p>
+        <div class="footer-links">
+          <a href="#hero" class="footer-back-top">▲ BACK TO TOP</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Theme & Responsive Navigation Script -->
+  <script src="script.js"></script>
+</body>
+</html>
